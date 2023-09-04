@@ -1,0 +1,33 @@
+body{
+    padding: 0 20px;
+    background-color: rgb(237, 237, 237);
+}
+h1,h2{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding:15px;
+    border-radius: 10px;
+}
+p{
+    padding: 10px;
+    line-height: 30px;
+    color: rgb(114, 2, 2);
+    font-size: 1.5em;
+    background-color: rgb(255, 255, 255);
+}
+aside ul{
+    list-style-type: none;
+    display:flex;
+    border:3px solid black;
+}
+aside ul li{
+    background-color: black;
+    padding:10px;
+    margin: 0 10px;
+}
+aside ul li a{
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 800;
+}

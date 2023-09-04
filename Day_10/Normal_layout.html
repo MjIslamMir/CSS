@@ -1,0 +1,100 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Normal Layout</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Mujahi dul Islam" />
+    <meta name="viewport" content="width=device-width initai-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <h1>
+        Normal flow is how the browser lays out HTML pages by default when you
+        do nothing to control page layout. Let's look at a quick HTML example:
+      </h1>
+      <p>
+        The process begins as the boxes of individual elements are laid out in
+        such a way that any padding, border, or margin they happen to have is
+        added to their content. This is what we call the box model. By default,
+        a block-level element's content fills the available inline space of the
+        parent element containing it, growing along the block dimension to
+        accommodate its content.
+      </p>
+      <p>
+        The size of inline-level elements is just the size of their content. You
+        can set width or height on some elements that have a default display
+        property value of inline, like &ltimg&gt, but display value will still
+        remain inline. If you want to control the display property of an
+        inline-level element in this manner, use CSS to set it to behave like a
+        block-level element (e.g., with display: block; or display:
+        inline-block;, which mixes characteristics from both). That explains how
+        elements are structured individually, but how about the way they're
+        structured when they interact with one another? The normal layout flow
+        (mentioned in the layout introduction article) is the system by which
+        elements are placed inside the browser's viewport. By default,
+        block-level elements are laid out in the block flow direction, which is
+        based on the parent's writing mode (initial: horizontal-tb). Each
+        element will appear on a new line below the last one, with each one
+        separated by whatever margin that's been specified. In English, for
+        example, (or any other horizontal, top to bottom writing mode)
+        block-level elements are laid out vertically. Inline elements behave
+        differently. They don't appear on new lines; instead, they all sit on
+        the same line along with any adjacent (or wrapped) text content as long
+        as there is space for them to do so inside the width of the parent block
+        level element. If there isn't space, then the overflowing content will
+        move down to a new line.
+      </p>
+      <p>
+        If two vertically adjacent elements both have a margin set on them and
+        their margins touch, the larger of the two margins remains and the
+        smaller one disappears. This is known as margin collapsing. Collapsing
+        margins is only relevant in the vertical direction.
+      </p>
+      <ul>
+        <dl>
+          For many of the elements on your page, the normal flow will create
+          exactly the layout you need. However, for more complex layouts you
+          will need to alter this default behavior using some of the tools
+          available to you in CSS. Starting with a well-structured HTML document
+          is very important because you can then work with the way things are
+          laid out by default rather than fighting against it. The methods that
+          can change how elements are laid out in CSS are:
+        </dl>
+        <li>
+          The display property — Standard values such as block, inline or
+          inline-block can change how elements behave in normal flow, for
+          example, by making a block-level element behave like an inline-level
+          element (see Types of CSS boxes for more information). We also have
+          entire layout methods that are enabled via specific display values,
+          for example, CSS Grid and Flexbox, which alter how child elements are
+          laid out inside their parents.
+        </li>
+        <li>
+          Floats — Applying a float value such as left can cause block-level
+          elements to wrap along one side of an element, like the way images
+          sometimes have text floating around them in magazine layouts.
+        </li>
+        <li>
+          The position property — Allows you to precisely control the placement
+          of boxes inside other boxes. static positioning is the default in
+          normal flow, but you can cause elements to be laid out differently
+          using other values, for example, as fixed to the top of the browser
+          viewport.
+        </li>
+        <li>
+          Table layout — Features designed for styling parts of an HTML table
+          can be used on non-table elements using display: table and associated
+          properties.
+        </li>
+        <li>
+          Multi-column layout — The Multi-column layout properties can cause the
+          content of a block to layout in columns, as you might see in a
+          newspaper.
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

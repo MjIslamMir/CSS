@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Mujahi dul Islam">
+        <meta name="viewport" content="width=device-width intial-scale=1">
+        <title>Working with media using CSS </title>
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <div>In the example below we have two boxes, both 200 pixels in size:
+            <ul>
+                <li> One contains an image which is smaller than 200 pixels — 
+                    it is smaller than the box and doesn't stretch to fill it.</li>
+                <li>The other is larger than 200 pixels and overflows the box.</li>
+            </ul>
+        </div>
+        <div class="wrapper">
+            <div class="box"><img src="star.png" alt="star"></div>
+            <div class="box"><img src="baloon.jpg" alt="balloons"></div>
+        </div>
+        <h3>
+            A common technique is to make the max-width of an image 100%. 
+            This will enable the image to become smaller in size than the box but not larger. 
+            This technique will also work with other replaced elements such as &ltvideo&gts, or &ltiframe&gts.
+
+        </h3>
+        <div class="wrapper">
+            <div class="newbox"><img src="star.png" alt="star"></div>
+            <div class="newbox"><img src="baloon.jpg" alt="balloons"></div>
+        </div>
+        <form>
+            <div><label for="name">Name</label>
+            <input type="text" id="name"></div>
+            <div><label for="email">Email</label>
+            <input type="email" id="email"></div>
+          
+            <div class="buttons"><input type="submit" value="Submit"></div>
+          </form>
+              
+    </body>
+</html>

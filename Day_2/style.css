@@ -1,0 +1,93 @@
+/* To import anathor stylesheet in a stayesheet 
+@import stylesheetToBeImported.css 
+*/
+*{ /*Universal selector*/
+    margin: 10px;
+    border-radius: 5px;
+}
+body{
+    background-color: rgb(255, 204, 196);
+}
+h1{
+    text-align: center;
+}
+p{ /*Element type selector*/
+    line-height: 30px;
+    font-size: 18px;
+    padding: 20px;
+    background-color: rgb(41, 28, 28);
+    color: aliceblue;
+}
+#firstDiv{ /*ID selector */
+    padding: 20px;
+}
+h1{ 
+    padding: 10px;
+    background-color: rgb(33, 30, 30);
+    color: rgb(255, 255, 255);
+}
+h1 + p{ /*adjacent sibling combinator selector*/
+    background-color: rgb(41, 28, 28);
+    color: aliceblue;
+}
+/* child combinator */
+ul>li{
+    background-color: rgb(88, 88, 37);
+}
+/* General Sibling combinator */
+h1 ~ .check{
+    color: rgb(255, 186, 186);
+}
+.secondDiv{ /*Class selector*/
+    line-height: 20px;
+}
+.secondDiv ul{ /*descendant combinator selector*/
+    list-style-type: none;
+    background-color: rgb(36, 36, 36);
+    margin: 0 20px;
+}
+.secondDiv ul li{ /*descendant combinator selector*/
+    color: aliceblue;
+    line-height: 25px;
+    font-size: 18px;
+    padding: 5px;
+}
+/* Selection based on state of an element */
+a:visited{
+    color: red;
+}
+a:hover{
+    color: black;
+    background-color: white; 
+    padding: 10px;
+}
+/* Seletion based on attribute */
+/* selcting list item which have used class attribute */
+li[class]{
+    font-style: italic;
+}
+/* select list item with class attribute equal to alpha */
+li[class="alpha"]{
+    background-color: blue ;
+}
+/* select list item with class attribute starts with ga*/
+li[class^="ga"]{
+    background-color: brown;
+}
+/* select list item with class attribute ends with be*/
+li[class$="ta"]{
+    background-color: blueviolet;
+}
+
+
+/* working with pseudoclass */
+.pseuClass p:last-child{
+    font-size: 120%;
+    font-style: italic;
+}
+/*  working with pseudo elements */
+.check::first-letter{
+    font-size: 30px;
+    font-style: italic;
+    color: aqua;
+}

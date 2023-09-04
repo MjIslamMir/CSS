@@ -1,0 +1,16 @@
+*{
+    background:linear-gradient(120deg,
+    rgba(205, 31, 31, 0.2),
+    rgb(5, 184, 220))
+}
+.Box{
+    box-sizing: border-box;
+    margin: 10px;
+    border: 5px solid rgb(135, 8, 8);
+    color: antiquewhite;
+    background-color: black;
+    padding: 10px;
+    width: 400px;
+    height: 300px;
+
+}

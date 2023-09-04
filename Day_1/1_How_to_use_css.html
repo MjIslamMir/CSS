@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="MUjahidul Islam">
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <title>Where to define css in an HTML5 webPage</title>
+        <style>
+            /* internal styling */
+            nav ul{
+                width: 100%;
+                list-style-type: none;
+                display: flex;
+                background-color: black;     
+            }
+            nav ul li{
+                width: 22%;
+                flex-wrap: wrap;
+                padding: 10px 30px;
+                min-width: 300x;
+                flex-wrap: wrap;
+            }
+            nav ul li a{
+                font-size: 2em;
+                text-decoration: none;
+                color: aliceblue;
+            }
+        </style>
+        <!-- External Styling -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header style="text-align: center; font-size:30px; font-weight: bold;">Header</header> <!--Inline Styling-->
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Our team</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+    
+          <!-- A Search form is another common non-linear way to navigate through a website. -->
+    
+          <form style=" display:flex; flex-direction: row-reverse; height: 30px ;"><!--Again Inline Styling-->
+            <input type="submit" value="Go!" />
+            <input type="search" name="q" placeholder="Search query" style="width: 500px; " />
+          </form></nav>
+        <aside><h2>Related</h2>
+
+            <ul>
+              <li><a href="#">Oh I do like to be beside the seaside</a></li>
+              <li><a href="#">Oh I do like to be beside the sea</a></li>
+              <li><a href="#">Although in the North of England</a></li>
+              <li><a href="#">It never stops raining</a></li>
+              <li><a href="#">Oh well…</a></li>
+            </ul></aside>
+        <main><h1>Main Contents</h1>
+            <section>
+                <h2>Section Header</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est voluptates impedit, 
+                    labore architecto possimus dolore provident accusantium ad nemo eaque ducimus corrupti, 
+                    magni veniam. Culpa libero soluta eos placeat. Quas iusto quam modi animi veritatis? 
+                    Ducimus iure eligendi, commodi similique sint ea quam soluta excepturi quia, tempore 
+                    enim officiis qui dolor sit voluptates voluptas modi quos blanditiis in, eaque esse. 
+                    Rem eum amet atque quo veritatis maiores voluptas, vitae quaerat numquam ipsam iusto 
+                    sit fugit fuga? Quis ex possimus modi totam enim 
+                    illo dolor qui asperiores sunt ipsum dolorum, quam cupiditate molestiae incidunt 
+                    nulla ut explicabo sint soluta odit nemo?
+                </p>
+            </section>
+            <article>
+                <h2>Article Header</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est voluptates impedit, 
+                    labore architecto possimus dolore provident accusantium ad nemo eaque ducimus corrupti, 
+                    magni veniam. Culpa libero soluta eos placeat. Quas iusto quam modi animi veritatis? 
+                    Ducimus iure eligendi, commodi similique sint ea quam soluta excepturi quia, tempore 
+                    enim officiis qui dolor sit voluptates voluptas modi quos blanditiis in, eaque esse. 
+                    Rem eum amet atque quo veritatis maiores voluptas, vitae quaerat numquam ipsam iusto 
+                    sit fugit fuga? Quis ex possimus modi totam enim 
+                    illo dolor qui asperiores sunt ipsum dolorum, quam cupiditate molestiae incidunt 
+                    nulla ut explicabo sint soluta odit nemo?
+                </p>
+            </article>
+        </main>
+        <aside><h2>Related</h2>
+
+            <ul>
+              <li><a href="#">Oh I do like to be beside the seaside</a></li>
+              <li><a href="#">Oh I do like to be beside the sea</a></li>
+              <li><a href="#">Although in the North of England</a></li>
+              <li><a href="#">It never stops raining</a></li>
+              <li><a href="#">Oh well…</a></li>
+            </ul></aside>
+        <footer><p>©Copyright 2050 by nobody. All rights reversed.</p></footer>
+    </body>
+</html>

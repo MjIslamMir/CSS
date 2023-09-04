@@ -1,0 +1,33 @@
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgb(180, 7, 56);
+    color: aliceblue;
+    margin: 20px;
+    border: solid black 5px;
+    padding: 10px;
+}
+p{
+    background-color: blueviolet;
+    color: aliceblue;
+    margin: 5px, 10px;
+    border: solid black 5px;
+    padding: 20px;
+}
+ul{
+    width: 80%;
+    font-size: medium;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    line-height: 25px;
+    word-spacing: 3px;
+    letter-spacing: 1.2px;
+}
+ul dl{
+    font-size: larger;
+}
+ul li{
+    list-style-type: square;
+}

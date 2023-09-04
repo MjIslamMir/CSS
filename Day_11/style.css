@@ -1,0 +1,54 @@
+*{
+    color: aliceblue;
+    text-transform: uppercase;
+    padding: 5px;
+    word-spacing: 4px;
+    border-radius: 10px;
+}
+h1{
+    padding: 10px;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+
+}
+.statPos{
+    /* These values do not alter the positin of the div for which this positioning is defined */
+    background-color: rgb(48, 3, 3);
+    position: static;
+    top:500px;
+    left:100px ;
+}
+.relPos{
+    z-index: 1;
+    background-color: rgb(2, 37, 105);
+    position: relative;
+    top:400px;
+    left:200px ;
+    width: 60%;
+}
+.absPos{
+    background-color: rgb(1, 62, 30);
+    position: absolute;
+    width: 50%;
+    top:200px;
+    left:350px ;
+}
+.fixPos{
+    background-color: rgb(62, 1, 57);
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    width: 300px;
+}
+.stickyPos{
+    background-color: rgb(48, 52, 1);
+    position: sticky;
+    width: 300px;
+    top:30px;
+    left: 20px;
+}
+.rest{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}

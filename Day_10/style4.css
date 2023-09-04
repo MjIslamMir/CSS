@@ -1,0 +1,42 @@
+*{
+    margin:0;
+    padding:10px;
+}
+.header1{
+    text-transform: uppercase;
+}
+h1{
+    font-weight: 100;
+    color: rgb(154, 227, 247);
+}
+.container1 {
+    background-color: black;
+    color: aliceblue;
+    column-count: 3;
+    column-gap: 20px;
+    text-align: justify;
+    column-rule: 4px dotted rgb(201, 238, 253);
+}
+.spanCol{
+    margin: 20px;
+    column-span: all;
+    text-align: center;
+    text-transform: uppercase;
+}
+p{
+    font-size: 1.2em;
+
+}
+.container2{
+    background-color: black;
+    color: aliceblue;
+    column-count: 4;
+    column-gap: 10px;
+}
+.card{
+    
+    border: 5px solid rgb(255, 255, 255);
+    break-inside: avoid;
+    margin-bottom: 10px;
+
+}

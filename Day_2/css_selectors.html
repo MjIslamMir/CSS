@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Working with CSS SELECTORS</title>
+        <meta name="author" content="Mujahi dul Islam">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="firstDiv"> <!--Setting a CSS ID for the element-->
+            <h1>THIS IS THE HEADING OF THE PAGE</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Doloremque atque id omnis aspernatur rem possimus excepturi? 
+                Quasi asperiores illum iusto tempore fugiat at aperiam animi 
+                similique in ipsa perferendis eius quisquam alias deserunt, 
+                architecto iure odio ad itaque perspiciatis laudantium, exercitationem dolorum! 
+                Suscipit expedita odit dicta reiciendis sequi dolores nesciunt sint veritatis 
+                ipsam ducimus alias consectetur, incidunt possimus asperiores dignissimos, 
+                accusantium ullam est porro adipisci? Blanditiis id rem aspernatur est a dignissimos. 
+                Unde veritatis maiores adipisci debitis at, quo consectetur hic et 
+                quibusdam quisquam sunt repellendus quas doloribus. 
+                Cupiditate minima tenetur ipsa nobis consectetur sequi totam saepe ab maxime adipisci!
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque itaque explicabo, minus 
+                tempore adipisci, ullam facilis ipsa quidem quae dicta vitae. Nam, at quia. Ducimus est 
+                in totam consequuntur. Sed, velit sunt. Accusamus, nihil perferendis earum corporis 
+                asperiores ad quod officiis. Quidem, deserunt similique odit totam reiciendis alias, 
+                ad quos, eum molestiae inventore aspernatur officia placeat itaque earum in voluptates 
+                doloremque repellendus neque laudantium? Adipisci reprehenderit quas omnis sapiente aut 
+                cupiditate necessitatibus quo minima commodi eius, illum mollitia cumque voluptatem quod. 
+                Et provident consequuntur explicabo dolor quas nihil minus id maiores, 
+                vel expedita ea ducimus, ipsum tempore deleniti repudiandae. Nihil.
+            <a href="https:www.google.com" target="_blank">Visit Google</a>
+            </p>
+        </div>
+        <div class="secondDiv"> <!--Setting a CSS CLASS for the element-->
+            <ul>
+                <li>First Element</li>
+                <li class="alpha">Second Element</li>
+                <li class="beta">Third Element</li>
+                <li class="gamma">Fourth Element</li>
+            </ul>
+        </div>
+        <div class="pseuClass">
+            <h1>Working with PseudoClasses</h1>
+            <p>A pseudo-class is a selector that selects elements that are in a specific state, e.g. 
+                they are the first element of their type, or they are being hovered over by the mouse pointer. 
+                They tend to act as if you had applied a class to some part of your document, 
+                often helping you cut down on excess classes in your markup, and giving you more flexible, 
+                maintainable code.
+                Pseudo-classes are keywords that start with a colon. For example, 
+                :hover is a pseudo-class.</p>
+        </div>
+        <div class="pseudoEle">
+            <h1>Working with Pseudo element</h1>
+            <p class="check">Pseudo-elements behave in a similar way. However, 
+                they act as if you had added a whole new HTML element into the markup, rather than applying a 
+                class to existing elements.
+                Pseudo-elements start with a double colon ::. ::before is an example of a pseudo-element.
+                For example, if you wanted to select the first line of a paragraph you could wrap it in a &ltspan&gt 
+                element and use an element selector; however, that would fail if the number of words you had wrapped 
+                were longer or shorter than the parent element's width. As we tend not to know how many words 
+                will fit on a line — as that will change if the screen width or font-size changes — 
+                it is impossible to robustly do this by adding HTML.
+
+                The ::first-line pseudo-element selector will do this for you reliably — 
+                if the number of words increases or decreases it will still only select the first line.</p>
+        </div>
+    </body>
+</html>

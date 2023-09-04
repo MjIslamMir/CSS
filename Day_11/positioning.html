@@ -1,0 +1,196 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Working with Positioning</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Mujahi dul Islam" />
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="statPos">
+      <h1>Static Positioning</h1>
+      <p>You'll see no difference at all when applying static position</p>
+    </div>
+
+    <div class="relPos">
+      <h1>Relative Positioning</h1>
+      <p>
+        This is very similar to static positioning, except that once the
+        positioned element has taken its place in the normal flow, you can then
+        modify its final position, including making it overlap other elements on
+        the page.
+      </p>
+      <p>
+        top, bottom, left, and right are used alongside position to specify
+        exactly where to move the positioned element to. To try this out, add
+        the following declarations to the .positioned rule in your CSS:
+      </p>
+    </div>
+    <div class="absPos">
+      <h1>Absolute Positioning</h1>
+      <p>
+        First of all, note that the gap where the positioned element should be
+        in the document flow is no longer there — the first and third elements
+        have closed together like it no longer exists! Well, in a way, this is
+        true. An absolutely positioned element no longer exists in the normal
+        document flow. Instead, it sits on its own layer separate from
+        everything else. This is very useful: it means that we can create
+        isolated UI features that don't interfere with the layout of other
+        elements on the page. For example, popup information boxes, control
+        menus, rollover panels, UI features that can be dragged and dropped
+        anywhere on the page, and so on.
+      </p>
+      <p>
+        Second, notice that the position of the element has changed. This is
+        because top, bottom, left, and right behave in a different way with
+        absolute positioning. Rather than positioning the element based on its
+        relative position within the normal document flow, they specify the
+        distance the element should be from each of the containing element's
+        sides. So in this case, we are saying that the absolutely positioned
+        element should sit 30px from the top of the "containing element" and
+        30px from the left.
+      </p>
+      <p>
+        top, bottom, left, and right are used alongside position to specify
+        exactly where to move the positioned element to. To try this out, add
+        the following declarations to the .positioned rule in your CSS:
+      </p>
+    </div>
+    <div class="fixPos">
+      <h1>Fixed Positioning</h1>
+      <p>
+        This works in exactly the same way as absolute positioning, with one key
+        difference: whereas absolute positioning fixes an element in place
+        relative to its nearest positioned ancestor (the initial containing
+        block if there isn't one), fixed positioning usually fixes an element in
+        place relative to the visible portion of the viewport. (An exception to
+        this occurs if one of the element's ancestors is a fixed containing
+        block because its transform property has a value other than none.) This
+        means that you can create useful UI items that are fixed in place, like
+        persistent navigation menus that are always visible no matter how much
+        the page scrolls.
+      </p>
+    </div>
+    <div class="stickyPos">
+      <h1>Sticky positioning</h1>
+      <p>
+        There is another position value available called position: sticky, which
+        is somewhat newer than the others. This is basically a hybrid between
+        relative and fixed position. It allows a positioned element to act like
+        it's relatively positioned until it's scrolled to a certain threshold
+        (e.g., 10px from the top of the viewport), after which it becomes fixed.
+      </p>
+    </div>
+    <p class="rest">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quaerat
+      blanditiis, alias dolores iste fugiat! Est odit labore voluptate esse unde
+      necessitatibus veritatis inventore fugiat sapiente! Excepturi porro,
+      maiores expedita cumque, quos itaque inventore officiis repellendus
+      laboriosam modi explicabo. Tempora ipsum, dicta placeat quia cum, neque et
+      rerum asperiores ex qui perspiciatis, repellat quod nulla tenetur harum
+      rem maiores perferendis quidem hic sint. Ipsam, atque. Ad quam tenetur
+      adipisci odio. Velit natus officia maxime obcaecati totam blanditiis,
+      soluta enim ut aliquid magni, laborum explicabo consectetur vel veniam
+      nulla ullam fugit. Officiis deleniti dolor rem ipsa amet impedit eveniet
+      veritatis iusto accusamus perferendis hic dolorem velit doloremque officia
+      tenetur repellat voluptatem ea maiores, laudantium deserunt sequi animi
+      dicta tempore illum. Expedita earum distinctio debitis officia inventore
+      atque ea necessitatibus alias officiis, aliquid, tempora quibusdam, ullam
+      nihil. Minus error quis nobis nam doloribus quasi. Perferendis suscipit
+      aliquam, voluptatibus explicabo enim earum! Tempore aspernatur corrupti,
+      earum similique aut minus harum sequi veniam quas quod! Eaque sint
+      dolores, ipsa nemo adipisci temporibus incidunt aliquid quo, quaerat
+      recusandae doloremque debitis repellendus quia porro cupiditate eius.
+      Inventore hic pariatur, suscipit provident ipsa odit quo commodi labore.
+      Veritatis voluptatem excepturi ullam similique quidem nisi, nemo omnis quo
+      dolores eveniet autem architecto aut? Aspernatur quidem quaerat
+      repellendus! Delectus natus illum quae, eveniet eligendi mollitia nesciunt
+      magnam blanditiis fuga assumenda. Optio facere eligendi illum suscipit
+      ratione eum fuga maiores, minima provident alias doloribus earum. Iusto
+      reprehenderit ut et optio commodi natus, numquam perferendis soluta
+      quibusdam ipsum provident in assumenda alias animi voluptates reiciendis
+      exercitationem quia dolor praesentium impedit atque! Nesciunt dolorum
+      perferendis odit doloremque natus molestias ullam error corrupti vero
+      fugiat eos in iste doloribus officiis impedit vitae, aut harum sed fuga
+      aliquid, esse rerum voluptate quisquam. Unde voluptatibus deserunt,
+      provident ipsam doloribus porro quod harum non consequuntur atque ratione
+      a! Delectus neque, ipsum at obcaecati esse voluptates et cupiditate aut
+      officia recusandae consequuntur non, mollitia blanditiis. Molestiae earum
+      neque maiores deserunt, quisquam esse suscipit culpa? Id nobis optio ut
+      ullam a consequatur fugiat itaque cupiditate, eaque quas mollitia natus
+      numquam? Aperiam doloribus eligendi expedita nobis voluptate facere
+      exercitationem nulla tempore molestias fugit vero odit velit repellendus
+      placeat, perspiciatis ea consectetur quidem perferendis voluptatibus quis?
+      Eum rerum doloremque dolorem cum et repellat ipsam sit in. A adipisci
+      dolor nam laudantium at vitae non iusto voluptas doloremque. Veritatis
+      adipisci, dolore similique quos, doloribus, non fugiat nostrum facere
+      vitae autem at labore dolorem asperiores nobis culpa! Voluptatibus quidem
+      reiciendis possimus perspiciatis natus, sapiente assumenda suscipit veniam
+      eveniet, qui blanditiis porro enim distinctio. Facere obcaecati, quis
+      accusamus ex rerum impedit, nostrum repellat laborum harum id cumque non
+      porro sapiente perspiciatis repudiandae, doloribus perferendis odio sed
+      repellendus. Beatae accusantium odit placeat quod. Vero perferendis ut,
+      non vitae, est aliquid enim eius dicta officia dolorum, tempore obcaecati
+      quasi fuga omnis iste voluptatem autem sit commodi similique minus. Quidem
+      corporis dolorem numquam neque earum, tempore eius reiciendis dolor. Sunt
+      eaque repellat ipsam quod vitae officia, veritatis praesentium! Rem, aut.
+      Fugit asperiores optio alias expedita nemo aperiam pariatur distinctio
+      quas ullam porro sequi aspernatur, perspiciatis eaque nesciunt quia magni
+      architecto mollitia id itaque iure eos quasi earum? Illum provident
+      consequuntur ab cum sed maiores quas debitis numquam praesentium vitae
+      dicta quisquam libero, neque similique harum laboriosam nobis culpa optio
+      consequatur reprehenderit quia rem, incidunt obcaecati! Soluta obcaecati
+      veritatis debitis, aut porro delectus laborum corrupti, tempora commodi
+      magni asperiores, quidem doloribus expedita quo eos deleniti animi minima
+      deserunt fugit nulla enim eligendi ut error totam. In, voluptates
+      quisquam? Quam, reiciendis! Facilis nam magnam adipisci ipsum similique
+      assumenda fugit natus nulla facere doloribus. Architecto aspernatur, atque
+      repudiandae et error praesentium a veritatis! Porro impedit soluta debitis
+      nesciunt, quae labore, illo vero consequatur sapiente id recusandae!
+      Accusantium in illum voluptas sit voluptatibus esse aliquam nulla nisi
+      repudiandae. Impedit, ab nam veniam consectetur possimus in laudantium
+      illo quisquam aspernatur nesciunt autem voluptates quam accusamus unde
+      voluptatem quis reprehenderit perspiciatis qui fugit. Vero beatae harum
+      esse, asperiores laboriosam nemo natus culpa optio repudiandae ratione ut
+      delectus, alias accusamus? Tempora laborum sequi sed molestias enim
+      exercitationem quos incidunt corporis molestiae fugiat iure, recusandae
+      nobis ratione repellat voluptatem maiores atque et blanditiis voluptates,
+      facere quod, deleniti libero beatae nemo! Temporibus distinctio natus,
+      dolorum fuga nostrum explicabo nobis quo? Praesentium sint iste earum
+      magnam facilis deserunt accusamus quaerat hic enim blanditiis iure, eaque
+      temporibus sapiente aspernatur culpa, eveniet accusantium qui vero. Qui
+      perspiciatis natus itaque quidem illo eligendi sint. Minus est soluta, et,
+      unde autem veniam in atque, tempore vel totam facilis suscipit consectetur
+      facere? Autem aliquid, commodi dolorum aut quidem quam officia, dolor
+      molestiae velit consequatur laboriosam fugiat eius omnis labore quo sequi
+      debitis magni ex nisi cumque! Error, tempora. Porro neque nobis ipsa
+      facilis accusantium laboriosam distinctio commodi amet. Suscipit
+      asperiores, ipsa aspernatur excepturi perferendis debitis culpa incidunt
+      quod repudiandae, dolorem, deleniti neque sequi tempore dignissimos
+      explicabo quisquam fugit! Rerum praesentium ea neque aliquid nobis nulla
+      minus velit expedita veniam. Expedita iure rerum delectus suscipit
+      blanditiis. Enim dolor accusamus ut quod atque possimus cumque sint sequi
+      saepe totam architecto, laudantium at aperiam laboriosam et dolores libero
+      recusandae a repudiandae deleniti nihil quisquam sapiente corrupti. Iure
+      expedita nulla similique minus, quae veritatis modi adipisci magnam
+      laboriosam sequi eos harum ullam dolorum, quidem a sit totam numquam
+      perferendis tenetur architecto. Praesentium, dolorum quod culpa est non
+      dolorem error nihil ratione dolore possimus nesciunt debitis quibusdam
+      itaque reprehenderit ea aliquam voluptas, quos, expedita neque tempora
+      quae rem! Voluptatum suscipit, atque dolorum ab velit quos! Iste
+      voluptates minima illo aperiam totam ex, velit saepe inventore a esse
+      deleniti recusandae magni aliquid excepturi eum, doloremque ratione
+      explicabo rem. Mollitia animi excepturi numquam quidem? Quidem ratione
+      incidunt quia est accusamus alias ad suscipit officia ipsa fuga? Quisquam
+      obcaecati sapiente quis eveniet molestiae ea eum perspiciatis animi
+      pariatur deserunt illo iure repudiandae, magnam modi eaque quidem vel
+      voluptatum velit voluptates. Nulla, unde officiis? Adipisci voluptatem eum
+      saepe, dolore voluptatibus similique sed voluptatum voluptas minima
+      doloremque animi laboriosam quidem, fugiat odit fuga commodi, excepturi
+      sunt libero illum eaque. Sint, ab.
+    </p>
+  </body>
+</html>
